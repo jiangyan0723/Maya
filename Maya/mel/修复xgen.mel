@@ -1,0 +1,8 @@
+
+
+    string $xgentype[]=`ls -type "xgmPalette"`;    
+    
+    int $i;
+    for ($i=0;$i<size($xgentype);$i++){
+    setAttr -type "string" ($xgentype[$i]+".xgFileName") "";
+    } 
